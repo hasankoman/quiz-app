@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="start">
+      <button class="btn btn-warning btn-lg btn-start">Start</button>
+    </div>
+    <div class="card quiz-card position-absolute">
+      <div class="card-header py-3">
+        <div class="title">Quiz App</div>
+        <div
+          class="timer bg-danger px-2 py-1 border border-danger border rounded"
+        >
+          <span class="timer-text text-white">Remaining Time:</span>
+          <span
+            class="timer-time ms-1 border border-warning border rounded bg-warning text-dark"
+            >10</span
+          >
+        </div>
+        <div class="timer-line bg-warning"></div>
+      </div>
+      <div class="card-body">
+        <div class="question-text fw-semibold fs-5"></div>
+        <div class="option-list mt-4"></div>
+      </div>
+      <div class="card-footer">
+        <div class="question-index"></div>
+        <button class="btn btn-secondary btn-next btn-sm">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="result-card card position-absolute bg-light">
+      <i class="fa-solid fa-award result-icon mt-3 mb-1"></i>
+      <b>TEBRİKLER!</b>
+      <div class="buttons mb-3">
+        <button class="btn btn-secondary btn-tryagain mx-1">Try Again</button>
+        <button class="btn btn-secondary btn-quit mx-1">Quit</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+.options:hover {
+  background-color: #f7d716;
+  color: black;
+}
+
+.btn-start,
+.quiz-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quiz-card {
+  width: 550px;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transform: translate(-50%, -50%) scale(0.7);
+  transition: all 0.3s ease;
+}
+
+.quiz-card.show {
+  opacity: 1;
+  pointer-events: auto;
+
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.card-header .timer .timer-time {
+  padding: 0.8px 4px;
+}
+
+.options {
+  border: 1.5px solid #1b2430;
+  padding: 5px 0px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 500;
+}
+
+.options i {
+  margin-right: 10px;
+}
+
+.option-list .options.disabled {
+  pointer-events: none;
+}
+
+.options span {
+  margin-left: 10px;
+}
+
+.options.correct {
+  background-color: #bdf2d5;
+  color: #4f5f56;
+}
+.options.wrong {
+  background-color: #fad4d4;
+  color: #7a5555;
+}
+.icon {
+  margin-right: 10px;
+}
+.card-footer .btn-next {
+  opacity: 0;
+  pointer-events: none;
+
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+.card-footer .btn-next.show {
+  opacity: 1;
+  pointer-events: all;
+
+  transform: scale(1);
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.result-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 550px;
+
+  transform: translate(-50%, -50%) scale(0.7);
+  transition: all 0.3s ease;
+}
+.result-card.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.result-card .result-icon {
+  color: chocolate;
+  font-size: 75px;
+}
+.result-card b {
+  color: chocolate;
+}
+.result-card span {
+  font-size: 20px;
+}
+
+/* timerLine */
+
+.timer-line {
+  position: absolute;
+  width: 550px;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+}
